@@ -1,6 +1,6 @@
 import React from "react"
 
-const ToggleButton = ({ isToggleOpen, setIsToggleOpen }) => {
+export const ToggleButton = ({ isToggleOpen, setIsToggleOpen }) => {
   return (
     <button
       className={`relative order-10 block h-10 w-10 self-center lg:hidden
@@ -31,5 +31,3 @@ const ToggleButton = ({ isToggleOpen, setIsToggleOpen }) => {
     </button>
   )
 }
-
-export default ToggleButton

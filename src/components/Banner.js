@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import SocialIcons from "./social/SocialIcons"
+import { SocialIcons } from "components"
 
 export const bannerQuery = graphql`
   query {
@@ -21,7 +21,7 @@ export const bannerQuery = graphql`
   }
 `
 
-const Banner = () => {
+export const Banner = () => {
   const data = useStaticQuery(bannerQuery)
   const image = data.allFile.nodes[0]
   const name = data.allFile.nodes[0].name
@@ -62,5 +62,3 @@ const Banner = () => {
     </div>
   )
 }
-
-export default Banner

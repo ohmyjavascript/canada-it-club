@@ -16,7 +16,7 @@ const SOCIAL_ICONS = [
     icon: <FaYoutube size={24} />,
   },
 ]
-const SocialIcons = () => {
+export const SocialIcons = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="mb-2 text-sm text-gray-600 md:mb-2">Follow us</div>
@@ -34,5 +34,3 @@ const SocialIcons = () => {
     </div>
   )
 }
-
-export default SocialIcons

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { BsLaptop } from "react-icons/bs"
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <Link
       id="Canada IT Club"
@@ -16,5 +16,3 @@ const Logo = () => {
     </Link>
   )
 }
-
-export default Logo

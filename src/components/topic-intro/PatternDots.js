@@ -1,6 +1,6 @@
 import React from "react"
 
-const PatternDots = () => {
+export const PatternDots = () => {
   return (
     <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
       <span className="relative inline-block">
@@ -33,5 +33,3 @@ const PatternDots = () => {
     </h2>
   )
 }
-
-export default PatternDots

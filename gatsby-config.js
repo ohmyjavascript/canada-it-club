@@ -25,8 +25,16 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Inter`, `source sans pro\:300,400,400i,700`],
+        display: "swap",
+      },
+    },
+    `gatsby-plugin-styled-components`,
   ],
 }
