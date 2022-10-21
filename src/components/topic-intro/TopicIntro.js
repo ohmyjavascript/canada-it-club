@@ -1,16 +1,14 @@
-import { Link } from "gatsby"
 import React from "react"
-import { FaRocket } from "react-icons/fa"
-import { PatternDots } from "./PatternDots"
+import { PatternDots, LinkButton, QuestionLogo } from "components"
 
 export const TopicIntro = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
       <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
         <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
           <div className="mb-6 sm:mx-auto">
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-              <FaRocket />
+            <div className="flex items-center justify-center w-48 h-48">
+              <QuestionLogo />
             </div>
           </div>
           <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -23,12 +21,7 @@ export const TopicIntro = () => {
             </p>
           </div>
           <div>
-            <Link
-              to="/blogs"
-              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-black"
-            >
-              All Blogs
-            </Link>
+            <LinkButton to={"/"}> Read More </LinkButton>
           </div>
         </div>
       </div>

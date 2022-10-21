@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { SocialIcons } from "components"
+import { SocialIcons, LinkButton } from "components"
 
 export const bannerQuery = graphql`
   query {
@@ -31,7 +31,7 @@ export const Banner = () => {
     <div className="relative flex flex-col-reverse py-16 lg:py-0 lg:flex-col">
       <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
         <div className="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
-          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:text-center">
+          <h2 className="mb-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:text-center">
             The one-stop Shop
             <br className="hidden md:block" />
             for all your IT Queries
@@ -42,12 +42,7 @@ export const Banner = () => {
             your queries answered!
           </p>
           <div className="mb-10 text-center md:mb-16 lg:mb-20">
-            <a
-              href="/"
-              className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-black"
-            >
-              Learn more
-            </a>
+            <LinkButton to={"/"}> Read More </LinkButton>
           </div>
           <SocialIcons />
         </div>

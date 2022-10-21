@@ -4,14 +4,18 @@ import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
 import { Header } from "components"
 import "./layout.css"
+import { Footer } from "components"
 
 const GlobalStyle = createGlobalStyle`
   body{
     font-family:'Playfair Display', 'Inter', sans-serif; 
     line-height: 1.2;
+    letter-spacing:1px;
     margin: 0;
     padding: 0;
-    
+    p {
+     /*font-family: 'Inter', sans-serif; */
+    }
   }
 `
 
@@ -33,8 +37,7 @@ export const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()} &middot; All Rights Reserved Canada IT
-          Club
+          <Footer />
         </footer>
       </div>
     </>

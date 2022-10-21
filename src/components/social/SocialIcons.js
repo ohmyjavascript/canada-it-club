@@ -16,10 +16,12 @@ const SOCIAL_ICONS = [
     icon: <FaYoutube size={24} />,
   },
 ]
-export const SocialIcons = () => {
+export const SocialIcons = ({ onlyIcons }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="mb-2 text-sm text-gray-600 md:mb-2">Follow us</div>
+      {!onlyIcons && (
+        <div className="mb-2 text-sm text-gray-600 md:mb-2">Follow us</div>
+      )}
       <div className="flex items-center space-x-4">
         {SOCIAL_ICONS.map(item => {
           return (
