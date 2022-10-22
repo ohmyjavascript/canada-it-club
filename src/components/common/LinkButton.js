@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-export const LinkButton = ({ children, url }) => {
+export const LinkButton = ({ children, url = "/" }) => {
   return (
     <Link
       to={url}

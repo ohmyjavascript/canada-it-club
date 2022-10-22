@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { RichText } from "components"
+import { FavoriteSmall } from "components"
 
 export const AllBlogs = () => {
   const result = useStaticQuery(graphql`
@@ -8,19 +9,9 @@ export const AllBlogs = () => {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
         blogs: edges {
           node {
-            publishedDate
+            publishedDate(formatString: "DD MMM YYYY")
             slug
             title
-            pageContent {
-              raw
-              references {
-                ... on ContentfulAsset {
-                  contentful_id
-                  title
-                  gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
-                }
-              }
-            }
             entryTitle
             description
             contentful_id
@@ -33,20 +24,12 @@ export const AllBlogs = () => {
   `)
   const { blogs } = result.allContentfulBlogPost
   return (
-    <div>
-      <h1> Blogs </h1>
+    <div className="px-4 pt-2 pb-16 mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-2">
       {blogs &&
-        blogs.length &&
         blogs.map(blog => {
-          const { contentful_id, author, description, pageContent } = blog.node
           return (
-            <div key={contentful_id}>
-              <div> {author}</div>
-              <div>{description}</div>
-              <RichText
-                raw={pageContent.raw}
-                references={pageContent.references}
-              />
+            <div key={blog.node.contentful_id}>
+              <FavoriteSmall blog={blog.node} />
             </div>
           )
         })}

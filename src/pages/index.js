@@ -4,7 +4,7 @@ import {
   Layout,
   TopicIntro,
   AllFavoriteBlogs,
-  Thumbnail,
+  ContactUsForm,
 } from "components"
 
 const index = () => {
@@ -13,7 +13,7 @@ const index = () => {
       <Banner />
       <TopicIntro />
       <AllFavoriteBlogs />
-      {/* <Thumbnail /> */}
+      <ContactUsForm />
     </Layout>
   )
 }
