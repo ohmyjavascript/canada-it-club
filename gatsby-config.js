@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `Canada IT CLub Project`,
@@ -36,5 +39,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: "arte1g3t43t3",
+        accessToken: "JTFvri0EljMo03O3FIhinZnWU9nSEEX4Wp0uApEcC0I",
+      },
+    },
   ],
 }

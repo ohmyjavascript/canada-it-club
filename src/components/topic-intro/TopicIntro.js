@@ -21,7 +21,7 @@ export const TopicIntro = () => {
             </p>
           </div>
           <div>
-            <LinkButton to={"/"}> Read More </LinkButton>
+            <LinkButton to="/"> Read More </LinkButton>
           </div>
         </div>
       </div>
