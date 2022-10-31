@@ -1,5 +1,7 @@
 import React from "react"
-import { PatternDots, LinkButton, QuestionLogo } from "../../components"
+import { PatternDots } from "./PatternDots"
+import { LinkButton } from "../common/LinkButton"
+import { QuestionLogo } from "../lottie-files/QuestionLogo"
 
 export const TopicIntro = () => {
   return (

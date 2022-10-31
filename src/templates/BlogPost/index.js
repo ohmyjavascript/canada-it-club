@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Layout, RichText, Seo } from "../../components"
+import { Layout } from "../../components/layout"
+import { RichText } from "../../components/RichText"
+import { Seo } from "../../components/Seo"
 
 const BlogPost = props => {
   const { title, description, publishedDate, author } =

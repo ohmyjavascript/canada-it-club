@@ -1,7 +1,7 @@
 import React from "react"
 import { FcCheckmark } from "react-icons/fc"
-import { FAQLottieLogo } from "../components"
 import { StaticImage } from "gatsby-plugin-image"
+import { FAQLottieLogo } from "./lottie-files/FAQLottieLogo"
 
 const infos = [
   {

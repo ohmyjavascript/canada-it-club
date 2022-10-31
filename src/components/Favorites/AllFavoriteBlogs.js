@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { FavoriteLarge, FavoriteSmall, FavoritesHeader } from "../../components"
+import { FavoriteLarge } from "./FavoriteLarge"
+import { FavoriteSmall } from "./FavoriteSmall"
+import { FavoritesHeader } from "./FavoritesHeader"
 
 export const AllFavoriteBlogs = () => {
   const result = useStaticQuery(graphql`

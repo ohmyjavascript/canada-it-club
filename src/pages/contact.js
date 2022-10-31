@@ -1,5 +1,7 @@
 import React from "react"
-import { Layout, Faq, ContactUsForm } from "../components"
+import { Layout } from "../components/layout"
+import { Faq } from "../components/Faq"
+import { ContactUsForm } from "../components/Forms/ContactUsForm"
 
 const contact = () => {
   return (

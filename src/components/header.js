@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { Logo, ToggleButton } from "../components"
+import { ToggleButton } from "./navigation/ToggleButton"
+import { Logo } from "./navigation/Logo"
 
 const NAVBAR_LINKS = [
   { id: 1, text: "Home", url: "/" },

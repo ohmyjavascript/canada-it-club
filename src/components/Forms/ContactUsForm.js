@@ -1,6 +1,6 @@
 import React from "react"
 import { useForm, ValidationError } from "@formspree/react"
-import { FormSubmissionAlert } from "../../components"
+import { FormSubmissionAlert } from "./FormSubmissionAlert"
 
 export const ContactUsForm = () => {
   const [state, handleSubmit] = useForm("mwkzndod")

@@ -1,7 +1,8 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { SocialIcons, LinkButton } from "../components"
 import { useStaticQuery, graphql } from "gatsby"
+import { SocialIcons } from "./social/SocialIcons"
+import { LinkButton } from "./common/LinkButton"
 
 export const Banner = () => {
   const result = useStaticQuery(graphql`

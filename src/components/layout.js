@@ -2,7 +2,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
-import { Header, Footer } from "../components"
+import { Header } from "./Header"
+import { Footer } from "./common/Footer"
 import "./layout.css"
 
 const GlobalStyle = createGlobalStyle`

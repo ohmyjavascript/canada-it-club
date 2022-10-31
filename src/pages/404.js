@@ -1,5 +1,7 @@
 import React from "react"
-import { Seo, Layout, LinkButton } from "../components"
+import { Seo } from "../components/Seo"
+import { Layout } from "../components/layout"
+import { LinkButton } from "../components/common/LinkButton"
 import { StaticImage } from "gatsby-plugin-image"
 
 const NotFoundPage = () => (

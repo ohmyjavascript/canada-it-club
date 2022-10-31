@@ -1,6 +1,6 @@
 import React from "react"
-import { ArrowLottieLogo } from "../../components"
 import styled from "styled-components"
+import { ArrowLottieLogo } from "../lottie-files/ArrowLottieLogo"
 
 export const LottieWrapper = styled.div`
   max-width: 50px;
