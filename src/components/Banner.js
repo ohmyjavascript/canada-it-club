@@ -1,6 +1,6 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { SocialIcons, LinkButton } from "components"
+import { SocialIcons, LinkButton } from "../components"
 import { useStaticQuery, graphql } from "gatsby"
 
 export const Banner = () => {

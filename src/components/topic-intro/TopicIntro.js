@@ -1,5 +1,5 @@
 import React from "react"
-import { PatternDots, LinkButton, QuestionLogo } from "components"
+import { PatternDots, LinkButton, QuestionLogo } from "../../components"
 
 export const TopicIntro = () => {
   return (

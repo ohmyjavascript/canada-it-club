@@ -1,5 +1,5 @@
 import React from "react"
-import { ArrowLottieLogo } from "components"
+import { ArrowLottieLogo } from "../../components"
 import styled from "styled-components"
 
 export const LottieWrapper = styled.div`

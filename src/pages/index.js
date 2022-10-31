@@ -5,7 +5,7 @@ import {
   TopicIntro,
   AllFavoriteBlogs,
   ContactUsForm,
-} from "components"
+} from "../components"
 
 const index = () => {
   return (

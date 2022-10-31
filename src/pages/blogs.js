@@ -1,5 +1,5 @@
 import React from "react"
-import { AllBlogs, Layout } from "components"
+import { AllBlogs, Layout } from "../components"
 import { StaticImage } from "gatsby-plugin-image"
 const blogs = () => {
   return (
