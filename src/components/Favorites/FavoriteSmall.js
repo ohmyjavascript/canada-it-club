@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { StyledAuthor } from "./style"
 
 export const FavoriteSmall = ({ blog, showBgColor }) => {
+  const slug = `/blogs/${blog.slug}`
   const customClass = showBgColor
     ? "bg-slate-100 shadow-md hover:bg-slate-200"
     : ""
@@ -22,7 +23,7 @@ export const FavoriteSmall = ({ blog, showBgColor }) => {
       <p className="mb-4 text-base text-gray-700 md:text-lg">
         {blog.description}
         <span className="block mt-2 text-sky-500 text-sm underline underline-offset-8 mb-4">
-          <Link to="/"> Read More → </Link>
+          <Link to={slug}> Read More → </Link>
         </span>
       </p>
       <div className="flex items-center">

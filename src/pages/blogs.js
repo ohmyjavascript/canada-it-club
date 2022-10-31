@@ -27,10 +27,10 @@ const blogs = () => {
               <span className="mb-8 text-xs font-bold tracking-widest text-black uppercase">
                 Yes, You're serious now, don't you?
               </span>
-              <h1 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
+              <h1 className="mb-8 text-4xl font-bold leading-none tracking-tighter md:text-7xl lg:text-5xl">
                 Go through the blogs below and see which one you found it useful
               </h1>
-              <p className="mb-8 text-base leading-relaxed text-left text-gray-500">
+              <p className="mb-8 text-base leading-relaxed text-left">
                 Inspired? Contributions are always welcome, we will tag you for
                 the credits too.
               </p>

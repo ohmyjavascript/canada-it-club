@@ -31,16 +31,16 @@ export const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
-        <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+    <div className="flex flex-col min-h-screen">
+      <div className="flex-none">
+        <GlobalStyle />
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       </div>
-    </>
+      <main className="grow">{children}</main>
+      <footer className="flex-none">
+        <Footer />
+      </footer>
+    </div>
   )
 }
 

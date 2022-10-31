@@ -1,8 +1,13 @@
 import React from "react"
-import { Layout } from "components"
+import { Layout, Faq, ContactUsForm } from "components"
 
 const contact = () => {
-  return <Layout>contact</Layout>
+  return (
+    <Layout>
+      <ContactUsForm />
+      <Faq />
+    </Layout>
+  )
 }
 
 export default contact

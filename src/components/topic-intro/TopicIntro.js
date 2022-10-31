@@ -7,7 +7,7 @@ export const TopicIntro = () => {
       <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
         <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
           <div className="mb-6 sm:mx-auto">
-            <div className="flex items-center justify-center w-48 h-48">
+            <div className="flex mx-auto items-center justify-center w-48 h-48">
               <QuestionLogo />
             </div>
           </div>
@@ -21,7 +21,7 @@ export const TopicIntro = () => {
             </p>
           </div>
           <div>
-            <LinkButton to="/"> Read More </LinkButton>
+            <LinkButton url="/blogs"> Read More </LinkButton>
           </div>
         </div>
       </div>

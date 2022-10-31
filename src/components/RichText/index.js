@@ -17,10 +17,16 @@ export const RichText = ({ raw, references = [] }) => {
     },
     renderNode: {
       [BLOCKS.HEADING_1]: (node, children) => {
-        return <h1 className="font-bold">{children}</h1>
+        return <h1 className="font-bold text-3xl">{children}</h1>
       },
       [BLOCKS.HEADING_2]: (node, children) => {
         return <h2 className="font-bold">{children}</h2>
+      },
+      [BLOCKS.UL_LIST]: (node, children) => {
+        return <ul className="list-disc ml-8 mb-8"> {children} </ul>
+      },
+      [BLOCKS.OL_LIST]: (node, children) => {
+        return <ul className="list-decimal ml-8 mb-8"> {children} </ul>
       },
       [BLOCKS.EMBEDDED_ASSET]: node => {
         const data = referencesMap[node.data.target.sys.id]

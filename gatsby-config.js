@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 })
 module.exports = {
   siteMetadata: {
@@ -42,8 +42,16 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: "arte1g3t43t3",
-        accessToken: "JTFvri0EljMo03O3FIhinZnWU9nSEEX4Wp0uApEcC0I",
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-social9-socialshare",
+      options: {
+        content: "fb193e320298423fac030536b0d182fb",
+        async: true,
+        defer: true,
       },
     },
   ],

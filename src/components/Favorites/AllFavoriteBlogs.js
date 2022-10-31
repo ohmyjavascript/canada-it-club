@@ -7,6 +7,7 @@ export const AllFavoriteBlogs = () => {
     query AllFavBlogsQuery {
       allContentfulBlogPost(filter: { showInFavories: { eq: true } }) {
         blogs: nodes {
+          slug
           title
           publishedDate(formatString: "DD MMM YYYY")
           contentful_id

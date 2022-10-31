@@ -29,7 +29,7 @@ export const Banner = () => {
             {subHeading}
           </p>
           <div className="mb-10 text-center md:mb-16 lg:mb-20">
-            <LinkButton to="/"> Read More </LinkButton>
+            <LinkButton url="/blogs"> Read More </LinkButton>
           </div>
           <SocialIcons />
         </div>

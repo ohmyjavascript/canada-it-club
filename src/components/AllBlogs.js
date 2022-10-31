@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { RichText } from "components"
 import { FavoriteSmall } from "components"
 
 export const AllBlogs = () => {
