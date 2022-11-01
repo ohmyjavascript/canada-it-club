@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { ToggleButton } from "./navigation/ToggleButton"
-import { Logo } from "./navigation/Logo"
+import { ToggleButton } from "../navigation/ToggleButton"
+import { Logo } from "../navigation/Logo"
 
 const NAVBAR_LINKS = [
   { id: 1, text: "Home", url: "/" },
@@ -9,7 +9,7 @@ const NAVBAR_LINKS = [
   { id: 3, text: "Contact", url: "/contact" },
 ]
 
-export function Header() {
+export function AppHeader() {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
 
   return (

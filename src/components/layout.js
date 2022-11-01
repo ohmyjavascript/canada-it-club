@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from "styled-components"
-import { Header } from "./Header"
+import { AppHeader } from "./common/AppHeader"
 import { Footer } from "./common/Footer"
 import "./layout.css"
 
@@ -34,7 +34,7 @@ export const Layout = ({ children }) => {
     <div className="flex flex-col min-h-screen">
       <div className="flex-none">
         <GlobalStyle />
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <AppHeader siteTitle={data.site.siteMetadata?.title || `Title`} />
       </div>
       <main className="grow">{children}</main>
       <footer className="flex-none">
